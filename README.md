@@ -55,12 +55,12 @@ If everything goes well you will get a response in json format like this:
 Now you have your token.copy your token because you gonna need it for all of the requests.</br>
 Now if for all routes that you wanna access, you have to send a header with `Authorization` as a key and `Bearer YOUR_TOKEN` as value,
 and you are good to go.
-#### Create Account
+#### Create Account For A Customer
 A customer can have many accounts so you can use `YOUR_APP_URL/api/CreateAccount/{customer}` to create a new account for a specefic customer.instead of `{customer}` you have to enter the coustomers id to assing that account to the entered customer.(we can easily change it to find the costomer by name or... but we are ok with id).</br>after making account using this route it will return the created account details in json format.
 #### Transfer
 You can transfer amounts between any two accounts, including those owned by different customers.you only need to use this route`YOUR_APP_URL/api/Transfer/from/{from}/to/{to}`</br>
 Instead of `{from}` you have to put the account's id that you wanna transfer amount from and instead of `{to}` you have to put account's id that wanna recieve the amount.if any problem happens you will recieve a message in json format that says `it is not possible` and if everything goes well you will recieve a `success message`.
-#### Get account's amount
+#### Get Account's Amount
 You can get the amount of a specefic account by using `YOUR_APP_URL/api/getAccountAmount/{account}`.you have to us account's id in `{account}` and then you will get full data of that account including amount.
 #### Transfer history
 you can get the full history of transfering a specefic account by this route `YOUR_APP_URL/api/TransferHistory/{account}`. you only need to put account's id instead of `{account}`.then you will see full transfers history in json format like this:</br>
