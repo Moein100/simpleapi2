@@ -64,7 +64,7 @@ Instead of `{from}` you have to put the account's id that you wanna transfer amo
 You can get the amount of a specefic account by using `YOUR_APP_URL/api/getAccountAmount/{account}`.you have to us account's id in `{account}` and then you will get full data of that account including amount.
 #### Transfer history
 you can get the full history of transfering a specefic account by this route `YOUR_APP_URL/api/TransferHistory/{account}`. you only need to put account's id instead of `{account}`.then you will see full transfers history in json format like this:</br>
-````````````````````````````````````
+```
 {
     "data": {
         "this_account_transfered": [
@@ -87,11 +87,11 @@ you can get the full history of transfering a specefic account by this route `YO
         ]
     }
 }
-````````````````````````````````````
+```
 You will see a "data" that includs "this_account_transfered" and "this_account_recieved".</br>
 "this_account_transfered" includes the info about amount that has been transfered by this account.</br>
 and "this_account_recieved" includes the info about amount that has been recieved by this account.
-##Test
+## Test
 you can run the tests by using `php artisan test`.</br>
 and if you faced with the error including this cocept that "there is no "unit" folder" you have to make the `Unit` folder inside `test` folder and then run:
 `php artisan test`
