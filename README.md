@@ -8,7 +8,9 @@ First run `composer install`.</br>
 Then config your database in `.env` file.</br>
 after that generate key for your laravel application using: `php artisan key:generate`.</br>
 Then use `php artisan migrate:fresh --seed` to create tables and pre-populate them.</br>
-after that run `php artisan passport:install`
+after that run `php artisan passport:install`.</br>
+Then `php artisan serve`.</br>
+And there you have it!.
 ## Some discriptions
 There are 8 api routes in this project.
 ```
