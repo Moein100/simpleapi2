@@ -53,7 +53,7 @@ If everything goes well you will get a response in json format like this:
 }
 ```
 Now you have your token.copy your token because you gonna need it for all of the requests.</br>
-Now if for all routes that you wanna access, you have to send a header with `Authorization` as a key and `Bearer YOUR_TOKEN` as value,
+Now if for all routes that you wanna access, you have to send a header with `Authorization` as a key and </br> `Bearer YOUR_TOKEN` as value,
 and you are good to go.
 #### Create Account For A Customer
 A customer can have many accounts so you can use `YOUR_APP_URL/api/CreateAccount/{customer}` to create a new account for a specefic customer.instead of `{customer}` you have to enter the coustomers id to assing that account to the entered customer.(we can easily change it to find the costomer by name or... but we are ok with id).</br>after making account using this route it will return the created account details in json format.
